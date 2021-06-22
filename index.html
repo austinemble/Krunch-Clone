@@ -5,20 +5,43 @@
     <title>Krunch Clone</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="menu navbar-brand" id="top">
-        <a style="color: white" href="#top"><h3>KRUNCH</h3></a>
-        <a style="color: white" href="#top"><h3 style="margin:1% 1% 0% 45% ;padding-right: 0.5px;">HOME</h3></a>
-        <a style="color: white" href="#about"><h3>ABOUT</h3></a>
-        <a style="color: white" href="#portfolio"><h3>PORTFOLIO</h3></a>
-        <a style="color: white" href="#services"><h3>SERVICES</h3></a>
-        <a style="color: white" href="#team"><h3>TEAM</h3></a>
-        <a style="color: white" href="#contact"><h3>CONTACT</h3></a>
-    </div>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark" style="opacity: 0.7; background-color: transparent;">
+            <a class="navbar-brand" style="font-size: 175%;" href="">Krunch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapseMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#top1">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+        </nav>
 
-    <div class="mainDisplay" id="top">
+    <div class="mainDisplay" id="top1">
         <h1 style="font-size:275%;">CLEAN AND FLEXIBLE TEMPLATE</h1>
         <p style="width: 75%; text-align: center;">
             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
@@ -35,15 +58,16 @@
         <br><br>
         <div class="blue-hr"></div>
         <br><br>
-        <p class="AboutUs-para">Lorem ipsum dolor sitamet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quisus nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br><br>
-            Excepteur sint occaecat cupidatat none proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
-            voluptate dolor.
-        </p>
-        
-        <img src="Images/pencilholder.jpg" class="pencilholder-img" alt="pencilholder.jpg">
+        <div class="row">
+            <p class="AboutUs-para col-lg-6 col-md-12" style="padding-left: 3.5%;">Lorem ipsum dolor sitamet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quisus nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br><br>
+                Excepteur sint occaecat cupidatat none proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+                voluptate dolor.
+            </p>
+            <img src="Images/pencilholder.jpg" class="pencilholder-img col-lg-6 col-md-12" alt="pencilholder.jpg">
+        </div>
     </div>
     
     <div class="Portfolio mainSections" id="portfolio">
@@ -52,15 +76,15 @@
         <br><br>
         <div class="blue-hr"></div>
         <br><br>
-        <div class="imgPortfolio">
-            <img class="img-Portfolio" src="Images/imgPortfolio1.jpeg" alt="imgPortfolio1.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio2.jpeg" alt="imgPortfolio2.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio3.jpeg" alt="imgPortfolio3.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio4.jpeg" alt="imgPortfolio4.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio5.jpeg" alt="imgPortfolio5.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio6.jpeg" alt="imgPortfolio6.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio7.jpeg" alt="imgPortfolio7.jpeg">
-            <img class="img-Portfolio"src="Images/imgPortfolio8.jpeg" alt="imgPortfolio8.jpeg">
+        <div class=" imgPortfolio row">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3" src="Images/imgPortfolio1.jpeg" alt="imgPortfolio1.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio2.jpeg" alt="imgPortfolio2.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio3.jpeg" alt="imgPortfolio3.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio4.jpeg" alt="imgPortfolio4.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio5.jpeg" alt="imgPortfolio5.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio6.jpeg" alt="imgPortfolio6.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio7.jpeg" alt="imgPortfolio7.jpeg">
+            <img class="img-Portfolio col-sm-1 col-md-6 col-lg-3"src="Images/imgPortfolio8.jpeg" alt="imgPortfolio8.jpeg">
         </div>
         <br><br><br>
         <em>Have a Project in Mind?</em>
@@ -69,22 +93,70 @@
         <br><br><br><br><br>
     </div>
 
-    <div class="testimonials mainSections">
+    <div class="testimonials mainSections carousel slide" id="testimonials" data-interval="100" data-pause="hover" data-bs-ride="carousel">
         <h1>Testimonials</h1>
         <br><br>
         <div class="blue-hr" id="hr-testimonials"></div>
         <br><br>
-        <div class="testimonial-para">
-            <p style="width: 60%;"><em style="color: white;">It really saves me time and effort. Web design is exactly what our business has been lacking. 
-                Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
-                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem risus tristique posuere.</em>
-            </p>
-            <br><br>
-            <div class="testimonial-name">
-                <h3>Walter Ward</h>
-            </div>
-            <br><br><br><br><br><br>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#videoDiv" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#videoDiv" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#videoDiv" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonial-para">
+                    <p style="width: 60%;">
+                        <em style="color: white;">It really saves me time and effort. Web design is exactly what our business has been lacking. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem risus tristique posuere.</em>
+                    </p>
+                    <br><br>
+                    <div class="testimonial-name">
+                        <h3>1--Walter Ward</h>
+                    </div>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="testimonial-para">
+                    <p style="width: 60%;">
+                        <em style="color: white;">It really saves me time and effort. Web design is exactly what our business has been lacking. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem risus tristique posuere.</em>
+                    </p>
+                    <br><br>
+                    <div class="testimonial-name">
+                        <h3>2--Walter Ward</h>
+                    </div>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="testimonial-para">
+                    <p style="width: 60%;">
+                        <em style="color: white;">It really saves me time and effort. Web design is exactly what our business has been lacking. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem risus tristique posuere.</em>
+                    </p>
+                    <br><br>
+                    <div class="testimonial-name">
+                        <h3>3--Walter Ward</h>
+                    </div>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>    
     </div>
 
     <div class="services mainSections" id="services">
@@ -161,29 +233,29 @@
         <br><br>
         <div class="blue-hr"></div>
         <br><br><br>
-        <div class="teamDetails">
-            <div class="teamSections">
+        <div class="teamDetails row">
+            <div class="teamSections col-lg-3 col-md-6 col-sm-12">
                 <img class="teamPics" src="Images/creativeDirector.jpg" alt="Creative Director">
                 <br><br>
                 <h4>MICHAEL THOMAS</h4>
                 <br>
                 <p class="teamRole">Creative Director</p>
             </div>
-            <div class="teamSections">
+            <div class="teamSections col-lg-3  col-md-6 col-sm-12">
                 <img  class="teamPics" src="Images/graphicDesigner.jpg" alt="Graphics Designer">
                 <br><br>
-                <h4>Graphics Designer</h4>
+                <h4>ALEXA MEYER</h4>
                 <br>
                 <p class="teamRole">Graphic Designer</p>
             </div>
-            <div class="teamSections">
+            <div class="teamSections col-lg-3  col-md-6 col-sm-12">
                 <img class="teamPics" src="Images/webDeveloper.jpg" alt="Web Developer">
                 <br><br>
                 <h4>JEFFREY STEWARD</h4>
                 <br>
                 <p class="teamRole">Web Developer</p>
             </div>
-            <div class="teamSections">
+            <div class="teamSections col-lg-3  col-md-6 col-sm-12">
                 <img class="teamPics" src="Images/webDesigner.jpg" alt="Web Designer">
                 <br><br>
                 <h4>BRUCE MOORE</h4>
@@ -193,16 +265,55 @@
         </div>
     </div>
 
-    <div class="videoDiv">
-        <br><br><br><br>
-        <img class="playButtonPic" src="Images/playButton.svg" alt="Play Button">
-        <br><br><br><br>
-        <em class="videoDiv-para">Aenean commodo ligula eget dolor sociis natoque penatibus et magnis <br>
-            dis parturient montes, nascetur ridiculus consectetur muse.
-        </em>
-        <br><br><br><br>
-        <button class="btn1">Download Now</button>
-        <br><br><br><br><br><br><br>
+    <div id="videoDiv" class="videoDiv carousel slide" data-interval="500" data-pause="hover" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#videoDiv" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#videoDiv" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#videoDiv" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <br><br><br><br>
+                <img class="playButtonPic" src="Images/playButton.svg" alt="Play Button">
+                <br><br><br><br>
+                <em class="videoDiv-para">1Aenean commodo ligula eget dolor sociis natoque penatibus et magnis <br>
+                    dis parturient montes, nascetur ridiculus consectetur muse.
+                </em>
+                <br><br><br><br>
+                <button class="btn1">Download Now</button>
+                <br><br><br><br><br><br><br>
+            </div>
+            <div class="carousel-item">
+                <br><br><br><br>
+                <img class="playButtonPic" src="Images/playButton.svg" alt="Play Button">
+                <br><br><br><br>
+                <em class="videoDiv-para">2Aenean commodo ligula eget dolor sociis natoque penatibus et magnis <br>
+                    dis parturient montes, nascetur ridiculus consectetur muse.
+                </em>
+                <br><br><br><br>
+                <button class="btn1">Download Now</button>
+                <br><br><br><br><br><br><br>
+            </div>
+            <div class="carousel-item">
+                <br><br><br><br>
+                <img class="playButtonPic" src="Images/playButton.svg" alt="Play Button">
+                <br><br><br><br>
+                <em class="videoDiv-para">3Aenean commodo ligula eget dolor sociis natoque penatibus et magnis <br>
+                    dis parturient montes, nascetur ridiculus consectetur muse.
+                </em>
+                <br><br><br><br>
+                <button class="btn1">Download Now</button>
+                <br><br><br><br><br><br><br>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoDiv" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoDiv" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>    
     </div>
 
     <div class="latestNews">
@@ -213,8 +324,9 @@
         <br><br>
         <div class="blue-hr"></div>
         <br><br><br>
-        <div class="news" style="padding-right: 155px;">
-            <img src="Images/newsPic1.jpeg" alt="News Pic1">
+        <div class="row">
+        <div class="news col-md-4 col-sm-12">
+            <img src="Images/newsPic1.jpeg" class="newsPics"  alt="News Pic1">
             <h3>Tempor incidunt labore dolor</h3>
             <br>
             <p><i>August 24, 2016</i></p>
@@ -223,8 +335,8 @@
             </p>
             <a href="">Read More</a>
         </div>
-        <div class="news">
-            <img src="Images/newsPic2.jpeg" alt="News Pic2">
+        <div class="news col-md-4 col-sm-12">
+            <img src="Images/newsPic2.jpeg" class="newsPics" alt="News Pic2">
             <h3>Eiusmod tempor labore aliqua</h3>
             <br>
             <p><i>August 20, 2016</i></p>
@@ -233,8 +345,8 @@
             </p>
             <a href="">Read More</a>
         </div>
-        <div class="news">
-            <img src="Images/newsPic3.jpeg" alt="News Pic3">
+        <div class="news col-md-4 col-sm-12">
+            <img src="Images/newsPic3.jpeg" class="newsPics"  alt="News Pic3">
             <h3>Conseqntur distinctio ipsum</h3>
             <br>
             <p><i>August 16, 2016</i></p>
@@ -243,16 +355,19 @@
             </p>
             <a href="">Read More</a>
         </div>
+    </div>
         <br><br><br><br>
         <button class="btn2" style="color: black;">Read our Blog</button>
         <br><br><br><br>
     </div>
-    <div class="contact" id="team">
+
+    <div class="contact" id="contact">
         <h1>Keep in touch</h1>
         <em>Setibulum rutrum quam vitae fringilla tincidunt</em>
         <br><br><br>
         <div class="blue-hr"></div>
     </div>
+    
     <div class="bottomContainer mainSections" id="contact">
         <div class="socialMedia">
             <a href="www.facebook.com">Facebook</a>
@@ -268,6 +383,6 @@
 
 
     </div>
-    
+</div>    
 </body>
 </html>
